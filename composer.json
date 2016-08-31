@@ -13,11 +13,11 @@
   "repositories": [
     {
       "type": "composer",
-      "url" : "http://wpackagist.org"
+      "url" : "https://wpackagist.org"
     },
     {
       "type": "git",
-      "url": "https://github.com/pods-framework/pods-json-api"
+      "url": "https://github.com/calderawp/caldera-forms"
     },
     {
       "type": "git",
@@ -29,31 +29,17 @@
     }
   ],
   "require"     : {
-    "johnpbloch/wordpress"                                      : "4.1",
-    "pods-framework/pods"                                       : "2.x",
-    "wpackagist-plugin/caldera-forms"                           : "*",
-    "wpackagist-plugin/json-rest-api"                           : "*",
-    "pods-framework/pods-deploy"                                : "*",
-    "pods-framework/pods-json-api"                              : "*",
-    "wpackagist-plugin/restricted-site-access"                  : "*",
-    "wpackagist-plugin/log-viewer"                              : "*",
-    "wpackagist-plugin/caldera-forms"                           : "*",
-    "wpackagist-theme/twentyfifteen"                            : "*",
-    "wpackagist-theme/fukasawa"                                 : "*"
-
-  },
-  "require-dev" : {
-    "wpackagist-plugin/log-deprecated-notices"              : "*",
+    "johnpbloch/wordpress"                                      : "4.6",
+    "Desertsnowman/caldera-forms": "dev-1.4.x",
     "wpackagist-plugin/debug-bar"                           : "*",
     "wpackagist-plugin/debug-bar-console"                   : "*",
-    "wpackagist-plugin/user-switching"                      : "*",
-    "wpackagist-plugin/simply-show-ids"                     : "*"
+    "wpackagist-plugin/query-monitor"                      : "*"
   },
   "extra"       : {
-    "wordpress-install-dir": "public_html/wp",
+    "wordpress-install-dir": "wp",
     "installer-paths": {
-      "public_html/site-content/plugins/{$name}/" : ["type:wordpress-plugin"],
-      "public_html/site-content/themes/{$name}/"  : ["type:wordpress-theme"]
+      "content/plugins/{$name}/" : ["type:wordpress-plugin"],
+      "content/site-content/themes/{$name}/"  : ["type:wordpress-theme"]
     }
   }
 }
